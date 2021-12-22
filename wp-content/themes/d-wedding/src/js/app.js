@@ -1,8 +1,9 @@
 import ReactDOM from "react-dom"
-import Header from "./Header"
 import {useEffect, useState} from "react";
 import {ApiRoutes} from "./utils/api-routes"
-import Acfs from "./Acfs";
+import Banner from "./sections/Banner"
+import Hero from "./sections/Hero"
+import SingleImage from "./sections/SingleImage"
 
 const $appContainer = document.getElementById("app"),
     siteUrl = $appContainer.dataset.siteUrl,
@@ -23,8 +24,25 @@ const App = () => {
 
     return (
         <div>
-            <Header/>
-            <Acfs acfs={Object.entries(acfs)} />
+            {
+                Object.entries(acfs).map(acf => {
+                    const [name, fields] = acf
+
+                    if (name === 'hero') {
+                        return <Hero key={name}
+                                     title={fields.hero_title}
+                                     image={fields.background_image}
+                        />
+                    } else if (name === 'banner') {
+                        return <Banner key={name}
+                                       title={fields.banner_title}
+                                       image={fields.image}
+                        />
+                    } else if (name === 'single_image') {
+                        return <SingleImage key={name} title={fields.single_title}/>
+                    }
+                })
+            }
         </div>
     )
 };
