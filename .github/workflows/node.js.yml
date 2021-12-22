@@ -39,7 +39,7 @@ jobs:
         remote_path: /var/www/html/wp-content/
         remote_host: 147.182.253.137
         remote_port: 22
-        remote_user: deploy
+        remote_user: root
         remote_key: ${{ secrets.DEPLOY_KEY }}
     
     - uses: burnett01/rsync-deployments@4.0
@@ -50,5 +50,5 @@ jobs:
         remote_path: /var/www/html/wp-content/themes/d-wedding/
         remote_host: 147.182.253.137
         remote_port: 22
-        remote_user: deploy
+        remote_user: root
         remote_key: ${{ secrets.DEPLOY_KEY }}  
