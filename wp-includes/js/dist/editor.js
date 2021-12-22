@@ -1734,7 +1734,7 @@ function cleanForSlug(string) {
 // EXTERNAL MODULE: external ["wp","primitives"]
 var external_wp_primitives_ = __webpack_require__("Tqx9");
 
-// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/header.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/Header.js
 
 
 /**

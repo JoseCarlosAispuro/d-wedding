@@ -16,9 +16,11 @@
 
 <body <?php body_class() ?>>
 
-<div id="app" data-page-id="<?= get_the_ID() ?>" data-site-id="<?= get_current_blog_id() ?>">
-
+<div id="app"
+     data-page-id="<?= get_the_ID() ?>"
+     data-site-url="<?= get_bloginfo('url') ?>">
 </div>
+
 <?php wp_footer() ?>
 </body>
 </html>

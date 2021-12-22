@@ -12,5 +12,3 @@ array_map(function ($coreFileNames) {
 }, $core);
 
 add_filter('show_admin_bar', 'is_blog_admin');
-
-add_filter( 'acf/settings/rest_api_enabled', '__return_true' );

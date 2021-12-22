@@ -1,5 +1,5 @@
 /**
- * @output wp-admin/js/auth-app.js
+ * @output wp-admin/js/auth-App.js
  */
 
 /* global authApp */

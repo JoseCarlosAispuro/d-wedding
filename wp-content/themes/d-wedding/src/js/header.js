@@ -1,8 +1,20 @@
-const Header = () => {
+import {Component} from "react";
 
-    return (
-        <div className={'uppercase bg-purple'}>React</div>
-    );
+class Header extends Component {
+
+    async componentDidMount() {
+        /*const rest = await fetch();
+        const json = await rest.json()*/
+        console.log('hola')
+    }
+
+    render() {
+        return (
+            <section className="navigation">
+
+            </section>
+        );
+    }
 }
 
 export default Header;

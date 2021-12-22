@@ -22926,7 +22926,7 @@ function CardFooter(props) {
 }
 /* harmony default export */ var footer = (CardFooter);
 
-// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/header.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/Header.js
 
 
 
@@ -36521,7 +36521,7 @@ class frame_ModalFrame extends external_wp_element_["Component"] {
 
 /* harmony default export */ var modal_frame = (with_focus_outside(frame_ModalFrame));
 
-// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/modal/header.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/modal/Header.js
 
 
 /**
@@ -38758,7 +38758,7 @@ function NoticeList({
 
 /* harmony default export */ var list = (NoticeList);
 
-// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/header.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/Header.js
 
 
 function PanelHeader({
