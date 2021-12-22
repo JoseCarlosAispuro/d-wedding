@@ -33,7 +33,7 @@ jobs:
       working-directory: ./wp-content/themes/d-wedding/
       
     - uses: burnett01/rsync-deployments@4.0
-      name: Snc Content
+      name: Sync Content
       with:
         switches: -avzr --exclude="/themes/*"  --include="./wp-content/uploads/*"  --filter=""
         path: ./wp-content/
@@ -44,7 +44,7 @@ jobs:
         remote_key: ${{ secrets.DEPLOY_KEY }}
     
     - uses: burnett01/rsync-deployments@4.0
-      name: theme sync
+      name: Sync Theme
       with:
         switches: -avzr --delete --exclude="./wp-admin/*" --exclude="./wp-includes/*"  --include="./wp-content/themes/d-wedding/*" --include="./wp-content/plugins/*"  --filter=""
         path: ./wp-content/themes/bittrex/  
