@@ -19,36 +19,16 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-    
-    - run: npm install
-      working-directory: ./wp-content/themes/d-wedding/
-      
-    - run: npm run prod
-      working-directory: ./wp-content/themes/d-wedding/
-      
-    - uses: burnett01/rsync-deployments@4.0
-      name: Sync Content
-      with:
-        switches: -avzr --exclude="/themes/*"  --include="./wp-content/uploads/*"  --filter=""
-        path: ./wp-content/
-        remote_path: /var/www/html/wp-content/
-        remote_host: 147.182.253.137
-        remote_port: 22
-        remote_user: root
-        remote_key: ${{ secrets.DEPLOY_KEY }}
-    
-    - uses: burnett01/rsync-deployments@4.0
-      name: Sync Theme
-      with:
-        switches: -avzr --delete --exclude="./wp-admin/*" --exclude="./wp-includes/*"  --include="./wp-content/themes/d-wedding/*" --include="./wp-content/plugins/*"  --filter=""
-        path: ./wp-content/themes/bittrex/  
-        remote_path: /var/www/html/wp-content/themes/d-wedding/
-        remote_host: 147.182.253.137
-        remote_port: 22
-        remote_user: root
-        remote_key: ${{ secrets.DEPLOY_KEY }}  
+    - name: Deploy Wordpress
+      uses: appleboy/ssh-action@v0.1.2
+      with: 
+        host: ${{secrets.SSH_HOST}}
+        key: ${{secrets.SSH_KEY}}
+        username: ${{secrets.SSH_USERNAME}}
+        script: |
+        cd ..
+        cd var/www/html/d-wedding/
+        git pull origin master
+        cd wp-content/themes/d-wedding
+        npm install
+        npm run prod
