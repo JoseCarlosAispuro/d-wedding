@@ -25,10 +25,10 @@ jobs:
         host: ${{secrets.SSH_HOST}}
         key: ${{secrets.SSH_KEY}}
         username: ${{secrets.SSH_USERNAME}}
+
         script: |
-        cd ..
-        cd var/www/html/d-wedding/
-        git pull origin master
-        cd wp-content/themes/d-wedding
-        npm install
-        npm run prod
+          cd /var/www/html/d-wedding/
+          git pull origin master
+          cd wp-content/themes/d-wedding
+          npm install
+          npm run prod
