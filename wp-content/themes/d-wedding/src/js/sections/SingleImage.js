@@ -1,10 +1,9 @@
-const SingleImage = ({title}) => {
+const SingleImage = ({ title }) => {
+  return (
+    <section className="single-image">
+      <div>{title}</div>
+    </section>
+  )
+}
 
-    return (
-        <section className="single-image">
-            <div>{title}</div>
-        </section>
-    )
-};
-
-export default SingleImage;
+export default SingleImage

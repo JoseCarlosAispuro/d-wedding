@@ -1,11 +1,10 @@
-const Banner = ({title, image}) => {
+const Banner = ({ title, image }) => {
+  return (
+    <section className="banner">
+      <div>{title}</div>
+      <div>{image}</div>
+    </section>
+  )
+}
 
-    return (
-        <section className="banner">
-            <div>{title}</div>
-            <div>{image}</div>
-        </section>
-    )
-};
-
-export default Banner;
+export default Banner

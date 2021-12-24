@@ -384,10 +384,3 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
-.bg-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(63 60 187 / var(--tw-bg-opacity));
-}
-.uppercase {
-  text-transform: uppercase;
-}

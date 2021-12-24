@@ -1,6 +1,6 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
 
-mix.js("src/js/app.js", "public/js")
-    .postCss("src/css/app.css", "public/css", [
-        require("tailwindcss"),
-    ]).react();
+mix
+  .js('src/js/app.js', 'public/js')
+  .postCss('src/css/app.css', 'public/css', [require('tailwindcss')])
+  .react()

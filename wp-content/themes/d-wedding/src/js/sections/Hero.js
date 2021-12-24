@@ -1,10 +1,9 @@
-const Hero = ({title, image}) => {
+const Hero = ({ title, image }) => {
+  return (
+    <section className="hero">
+      <div>{title}</div>
+    </section>
+  )
+}
 
-    return (
-        <section className="hero">
-            <div>{title}</div>
-        </section>
-    )
-};
-
-export default Hero;
+export default Hero
