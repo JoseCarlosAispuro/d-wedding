@@ -1,3 +1,5 @@
+import React from 'react'
+
 type PropsT = { title: string }
 
 const SingleImage = ({ title }: PropsT) => {

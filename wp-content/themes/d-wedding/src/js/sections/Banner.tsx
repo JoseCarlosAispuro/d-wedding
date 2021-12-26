@@ -1,3 +1,5 @@
+import React from 'react'
+
 type PropsT = { title: string; image: string }
 
 const Banner = ({ title, image }: PropsT) => {
