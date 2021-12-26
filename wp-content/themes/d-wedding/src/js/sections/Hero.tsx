@@ -1,4 +1,6 @@
-const Hero = ({ title, image }) => {
+type PropsT = { title: string; image: string }
+
+const Hero = ({ title }: PropsT) => {
   return (
     <section className="hero">
       <div>{title}</div>

@@ -1,4 +1,4 @@
-export function snakeToPascal(string) {
+export function snakeToPascal(string: string): string {
   return string
     .split('/')
     .map((snake) =>

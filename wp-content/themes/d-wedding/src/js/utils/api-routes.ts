@@ -1,4 +1,4 @@
 export const ApiRoutes = {
-  pages: (siteUrl) => `${siteUrl}/wp-json/wp/v2/pages/`,
-  page: (siteUrl, pageId) => `${siteUrl}/wp-json/wp/v2/pages/${pageId}`,
+  pages: (siteUrl: string) => `${siteUrl}/wp-json/wp/v2/pages/`,
+  page: (siteUrl: string, pageId: string) => `${siteUrl}/wp-json/wp/v2/pages/${pageId}`,
 }

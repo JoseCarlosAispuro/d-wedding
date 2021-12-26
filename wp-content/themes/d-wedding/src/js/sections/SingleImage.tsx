@@ -1,4 +1,6 @@
-const SingleImage = ({ title }) => {
+type PropsT = { title: string }
+
+const SingleImage = ({ title }: PropsT) => {
   return (
     <section className="single-image">
       <div>{title}</div>

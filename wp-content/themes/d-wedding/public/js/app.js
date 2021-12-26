@@ -1,13 +1,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/app.ts":
-/*!***********************!*\
-  !*** ./src/js/app.ts ***!
-  \***********************/
+/***/ "./src/js/app.tsx":
+/*!************************!*\
+  !*** ./src/js/app.tsx ***!
+  \************************/
 /***/ (() => {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/src/js/app.ts: Unexpected token, expected \",\" (27:13)\n\n\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[36mreturn\u001b[39m (\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m       {\u001b[33mObject\u001b[39m\u001b[33m.\u001b[39mentries(acfs)\u001b[33m.\u001b[39mmap((acf) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m         \u001b[36mconst\u001b[39m [name\u001b[33m,\u001b[39m fields] \u001b[33m=\u001b[39m acf\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m         \u001b[36mif\u001b[39m (name \u001b[33m===\u001b[39m \u001b[32m'hero'\u001b[39m) {\u001b[0m\n    at Object._raise (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:541:17)\n    at Object.raiseWithData (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:534:17)\n    at Object.raise (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:495:17)\n    at Object.unexpected (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:3580:16)\n    at Object.expect (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:3554:28)\n    at Object.parseObjectLike (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:12460:14)\n    at Object.parseExprAtom (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:11913:23)\n    at Object.parseExprSubscripts (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:11584:23)\n    at Object.parseUpdate (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:11564:21)\n    at Object.parseMaybeUnary (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/@babel/parser/lib/index.js:11539:23)");
+throw new Error("Module build failed (from ./node_modules/ts-loader/index.js):\nError: \u001b[31merror while parsing tsconfig.json\u001b[39m\n    at Object.loader (/Users/jesuslizarraga/code/d-wedding/wp-content/themes/d-wedding/node_modules/ts-loader/dist/index.js:17:18)");
 
 /***/ }),
 
@@ -161,7 +161,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["public/css/app"], () => (__webpack_require__("./src/js/app.ts")))
+/******/ 	__webpack_require__.O(undefined, ["public/css/app"], () => (__webpack_require__("./src/js/app.tsx")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/css/app"], () => (__webpack_require__("./src/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
