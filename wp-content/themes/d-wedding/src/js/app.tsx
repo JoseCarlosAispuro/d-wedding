@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
 import { useEffect, useState } from 'react'
 import { ApiRoutes } from './utils/api-routes'
 import Banner from './sections/Banner'
