@@ -1,6 +1,7 @@
-const mix = require('laravel-mix');
+//eslint-disable-next-line
+const mix = require('laravel-mix')
 
-mix.js("src/js/app.js", "public/js")
-    .postCss("src/css/app.css", "public/css", [
-        require("tailwindcss"),
-    ]).react();
+mix
+  .ts('src/js/app.tsx', 'public/js')
+  .postCss('src/css/app.css', 'public/css', [require('tailwindcss')])
+  .react()
